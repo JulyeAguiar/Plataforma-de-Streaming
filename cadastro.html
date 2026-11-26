@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta – Zênite</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32">Zênite</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login.html">Entrar</a></li>
+        <li><a class="botao" href="cadastro.html">Criar conta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form class="formulario" id="form-cadastro">
+      <h1>Criar conta</h1>
+      <p id="aviso"></p>
+
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="insira um e-mail válido" required>
+
+      <label for="senha">Senha (mínimo 6 caracteres)</label>
+      <input type="password" id="senha" name="senha" minlength="6" required>
+
+      <label for="confirmar">Confirmar senha</label>
+      <input type="password" id="confirmar" name="confirmar" minlength="6" required>
+
+      <p id="erro" class="erro" role="alert"></p>
+      <button class="botao" type="submit">Criar conta</button>
+      <p>Já tem conta? <a href="login.html">Entrar</a></p>
+    </form>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cadastro.html">Criar conta</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Julia Watanabe</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Emanuely Oliveira</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Julye Aguiar</a></li>
+    </ul>
+    <p>Zênite – projeto acadêmico de Programação Web Front-end · Grupo 2</p>
+    <p>Reprodução simulada. Sinopses próprias; pôsteres ilustrativos criados para o projeto.</p>
+  </footer>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
