@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo – Zênite</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="catalogo.html"><img src="img/logo.svg" alt="" width="32" height="32">Zênite</a>
+    <nav>
+      <ul>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="minha-lista.html">Minha lista</a></li>
+        <li><button class="botao botao-claro" type="button" onclick="sair()">Sair</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Catálogo</h1>
+
+    <section class="destaque" aria-labelledby="d-titulo">
+      <img id="d-poster" src="img/logo.svg" alt="" width="400" height="600">
+      <div class="destaque-texto">
+        <p class="selo">Destaque do dia</p>
+        <h2 id="d-titulo"></h2>
+        <p id="d-meta"></p>
+        <p id="d-sinopse"></p>
+        <a class="botao" id="d-ver" href="catalogo.html">Ver detalhes</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Todos os títulos</h2>
+      <div class="filtros">
+        <div class="campo">
+          <label for="busca">Buscar</label>
+          <input type="search" id="busca" placeholder="Título, ator ou diretor">
+        </div>
+        <div class="campo">
+          <label for="genero">Gênero</label>
+          <select id="genero">
+            <option value="">Todos</option>
+            <option value="Ação">Ação</option>
+            <option value="Animação">Animação</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Ficção">Ficção</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Terror">Terror</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="tipo">Tipo</label>
+          <select id="tipo">
+            <option value="">Filmes e séries</option>
+            <option value="Filme">Filmes</option>
+            <option value="Série">Séries</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="contagem" aria-live="polite"></p>
+      <div class="grade" id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Julia Watanabe</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Emanuely Oliveira</a></li>
+      <li><a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" rel="noopener">Currículo – Julye Aguiar</a></li>
+    </ul>
+    <p>Zênite – projeto acadêmico de Programação Web Front-end · Grupo 2</p>
+    <p>Reprodução simulada. Sinopses próprias; pôsteres ilustrativos criados para o projeto.</p>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
